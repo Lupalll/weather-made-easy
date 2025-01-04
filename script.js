@@ -48,7 +48,7 @@ const fetchWebcamData = (location) => {
         });
 };
 
-// Dark Mode Toggle
+// Dark Mode Togglee
 const darkModeToggle = document.getElementById('darkMode');
 darkModeToggle.addEventListener('change', () => {
     document.body.classList.toggle('dark-mode', darkModeToggle.checked);
