@@ -19,9 +19,9 @@ const fetchWeatherData = (location) => {
                 return;
             }
             weatherDiv.innerHTML = `
-                <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
+                <p><strong>Temperatur:</strong> ${data.main.temp} °C</p>
                 <p><strong>Wind:</strong> ${data.wind.speed} m/s</p>
-                <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+                <p><strong>Luftfeuchtigkeit:</strong> ${data.main.humidity}%</p>
             `;
         })
         .catch(() => {
