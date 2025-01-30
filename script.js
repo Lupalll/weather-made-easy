@@ -7,7 +7,7 @@ document.getElementById('searchBtn').addEventListener('click', () => {
 });
 
 const fetchWeatherData = (location) => {
-    const apiKey = 'b6a3dd77a904c822b523df662f4a0513';
+    const apiKey = ${{ env.key }}
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
 
     fetch(url)
